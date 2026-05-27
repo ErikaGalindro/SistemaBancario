@@ -1,5 +1,3 @@
-package TesteClass6;
-
 public class ContaCorrente extends SistemaBancario {
 	private double taxaSaque = 1.50;
 
