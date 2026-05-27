@@ -1,0 +1,24 @@
+package TesteClass6;
+
+public class ContaCorrente extends SistemaBancario {
+	private double taxaSaque = 1.50;
+
+	public ContaCorrente(double saldoInicial) {
+		super(saldoInicial);
+	}
+	@Override
+	public void sacar(double valor) {
+		double valorTotal = valor + taxaSaque;
+
+		if (valorTotal <= saldo1) {
+
+			saldo1 -= valorTotal;
+			System.out.println("Saque X: R$" + valor + "(taxa R$ " + taxaSaque + ")");
+
+		} else {
+			System.out.println("saldo insuficiente");
+		}
+
+	}
+
+}
