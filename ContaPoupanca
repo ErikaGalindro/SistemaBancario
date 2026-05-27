@@ -1,0 +1,18 @@
+package TesteClass6;
+
+public class ContaPoupanca extends SistemaBancario {
+
+	private final double TaxaJuros = 0.03; //3%
+	
+	public ContaPoupanca (double saldoInicial) {
+		super(saldoInicial);
+		
+	}
+	
+	public void AplicarJuros() {
+		double juros = saldo1 * TaxaJuros;
+		saldo1 += juros;
+		System.out.println("Juros aplicado, R$" + juros);
+		
+	}
+}
